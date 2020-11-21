@@ -7,6 +7,8 @@ const openDoor = (path, event) => {
     event.target.parentNode.style.backgroundImage = `url(${path}.jpg)`;
     event.target.style.opacity = "0";
     event.target.style.backgroundColor = "#521751";
+    var audio = new Audio(`${path}.mp3`);
+    audio.play();
 }
 
 const createCalendar = () => {
