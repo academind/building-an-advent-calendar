@@ -14,11 +14,11 @@
 }
 
 .container {
-    width: 800px;
+    width: 1222px; 
     height: 900px;
     border: 5px solid black;
     margin: 15px auto;
-    background-image: url("./courses/calendar.png");
+    background-image: url("./courses/calendar.jpg");
     background-size: cover;
     box-shadow: 6px 6px 20px gray;
     display: grid;
@@ -42,8 +42,8 @@
 .text {
     height: 100%;
     width: 100%;
-    color: white;
-    padding: 10px;
+    color: rgb(88, 4, 4);
+    padding: 20px;
     border: 2px solid black;
     transition: opacity 2.5s;
 }
