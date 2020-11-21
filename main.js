@@ -4,7 +4,7 @@ const calendarContainer = document.querySelector(".container");
 const calendarDays = 24;
 
 const openDoor = (path, event) => {
-    event.target.parentNode.style.backgroundImage = `url(${path})`;
+    event.target.parentNode.style.backgroundImage = `url(${path}.jpg)`;
     event.target.style.opacity = "0";
     event.target.style.backgroundColor = "#521751";
 }
@@ -23,7 +23,7 @@ const createCalendar = () => {
         calendarDoor.appendChild(calendarDoorText);
 
         courseNumber = i + 1;
-        let coursePath = `./courses/course-${courseNumber}.jpg`;
+        let coursePath = `./courses/course-${courseNumber}`;
 
         calendarDoorText.addEventListener("click", openDoor.bind(null, coursePath));
     }
