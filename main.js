@@ -1,4 +1,4 @@
-const calendarButton = document.querySelector(".btn-start");
+// const calendarButton = document.querySelector(".btn-start");
 const calendarContainer = document.querySelector(".container");
 
 const calendarDays = 24;
@@ -31,7 +31,7 @@ const createCalendar = () => {
     }
 }
 
-calendarButton.addEventListener("click", createCalendar);
+// calendarButton.addEventListener("click", createCalendar);
 
 (function autorun() {
 
