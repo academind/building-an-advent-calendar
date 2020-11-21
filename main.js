@@ -10,7 +10,7 @@ const openDoor = (path, event) => {
 }
 
 const createCalendar = () => {
-    for(let i = 0; i  < calendarDays; i++) {
+    for (let i = 0; i < calendarDays; i++) {
         const calendarDoor = document.createElement("div");
         const calendarDoorText = document.createElement("div");
 
@@ -25,9 +25,16 @@ const createCalendar = () => {
         courseNumber = i + 1;
         let coursePath = `./courses/course-${courseNumber}.jpg`;
 
-        calendarDoorText.addEventListener("click", openDoor.bind(null,  coursePath));
+        calendarDoorText.addEventListener("click", openDoor.bind(null, coursePath));
     }
 }
 
 calendarButton.addEventListener("click", createCalendar);
+
+(function autorun() {
+
+    createCalendar(); // autostart this one
+
+})();
+
 
