@@ -1,0 +1,5 @@
+# .htaccess-Datei für Passwortschutz
+AuthType Basic
+AuthName "Geschützter Bereich der Dotzis - Bitte gib Dein Passwort ein!"
+AuthUserFile /var/www/vhosts/hosting107306.a2f21.netcup.net/httpdocs/.htpasswd
+Require valid-user
