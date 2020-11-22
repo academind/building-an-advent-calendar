@@ -1,4 +1,10 @@
 # .htaccess-Datei für Passwortschutz
+# reroute to ssl version
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Authenticate
 AuthType Basic
 AuthName "Geschützter Bereich der Dotzis - Bitte gib Dein Passwort ein!"
 AuthUserFile /var/www/vhosts/hosting107306.a2f21.netcup.net/httpdocs/.htpasswd
